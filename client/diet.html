@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diet Plans - GYM TOWN</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">GYM TOWN</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="membership.html">Membership Plans</a></li>
+                <li><a href="diet.html">Diet Plans</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="diet-hero">
+            <div class="container">
+                <div class="diet-hero-content">
+                    <h1>Customized Diet Plans for Your Goals</h1>
+                    <p>Nutrition is 70% of your fitness journey. Get a diet plan tailored to your specific needs and goals.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="diet-intro">
+            <div class="container">
+                <div class="diet-intro-content">
+                    <h2>Why Nutrition Matters</h2>
+                    <p>A proper diet is essential for achieving your fitness goals, whether it's losing weight, building muscle, or improving overall health. Our diet plans are designed by professional nutritionists and can be customized to your specific needs, preferences, and lifestyle.</p>
+                    <div class="nutrition-benefits">
+                        <div class="benefit">
+                            <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Healthy meal">
+                            <h3>Better Performance</h3>
+                            <p>Proper nutrition fuels your workouts and helps you perform at your best.</p>
+                        </div>
+                        <div class="benefit">
+                            <img src="https://images.unsplash.com/photo-1505576399279-565b52d4ac71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Weight scale">
+                            <h3>Weight Management</h3>
+                            <p>The right diet helps you achieve and maintain your ideal weight.</p>
+                        </div>
+                        <div class="benefit">
+                            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Healthy ingredients">
+                            <h3>Overall Health</h3>
+                            <p>Balanced nutrition improves your energy, mood, and overall well-being.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bmi-calculator">
+            <div class="container">
+                <h2 class="section-title">BMI Calculator</h2>
+                <p class="section-description">Calculate your Body Mass Index (BMI) to determine which diet plan is best suited for your body type.</p>
+                
+                <div class="bmi-calculator-container">
+                    <div class="calculator-form">
+                        <div class="form-group">
+                            <label for="weight">Weight (kg)</label>
+                            <input type="number" id="weight" placeholder="Enter weight" min="30" max="300" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="height">Height (cm)</label>
+                            <input type="number" id="height" placeholder="Enter height" min="100" max="250" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="gender">Gender</label>
+                            <select id="gender">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="age">Age</label>
+                            <input type="number" id="age" placeholder="Enter age" min="15" max="80" required>
+                        </div>
+                        <button id="calculate-bmi" class="btn">Calculate BMI</button>
+                    </div>
+                    
+                    <div class="bmi-result" id="bmi-result" style="display: none;">
+                        <h3>Your BMI: <span id="bmi-value">0</span></h3>
+                        <p>Category: <span id="bmi-category">Normal</span></p>
+                        <div class="bmi-recommendation">
+                            <h4>Recommended Diet Plan:</h4>
+                            <p id="diet-recommendation">Based on your BMI, we recommend our Weight Management Plan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="diet-plans-section">
+            <div class="container">
+                <h2 class="section-title">Our Diet Plans</h2>
+                <div class="diet-plans">
+                    <div class="diet-card">
+                        <div class="diet-card-image">
+                            <img src="https://images.unsplash.com/photo-1532465614-6cc8d45f647f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Weight Loss Diet">
+                        </div>
+                        <div class="diet-card-content">
+                            <h3>Weight Loss</h3>
+                            <p>A calorie-controlled diet focused on nutrient-dense foods to help you lose weight while maintaining energy and muscle mass.</p>
+                            <ul class="diet-features">
+                                <li>Personalized calorie targets</li>
+                                <li>Balanced macronutrient distribution</li>
+                                <li>Meal timing strategies</li>
+                                <li>Grocery shopping lists</li>
+                                <li>Recipe suggestions</li>
+                            </ul>
+                            <button class="btn select-diet" data-diet-id="weight-loss">Select Plan</button>
+                        </div>
+                    </div>
+
+                    <div class="diet-card">
+                        <div class="diet-card-image">
+                            <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Muscle Building Diet">
+                        </div>
+                        <div class="diet-card-content">
+                            <h3>Muscle Building</h3>
+                            <p>A protein-rich diet designed to support muscle growth and recovery while providing enough calories for strength gains.</p>
+                            <ul class="diet-features">
+                                <li>Higher protein intake</li>
+                                <li>Strategic carbohydrate timing</li>
+                                <li>Pre and post-workout nutrition</li>
+                                <li>Supplement recommendations</li>
+                                <li>Progressive calorie increases</li>
+                            </ul>
+                            <button class="btn select-diet" data-diet-id="muscle-building">Select Plan</button>
+                        </div>
+                    </div>
+
+                    <div class="diet-card">
+                        <div class="diet-card-image">
+                            <img src="https://images.unsplash.com/photo-1511688878353-3a2f5be94cd7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Performance Diet">
+                        </div>
+                        <div class="diet-card-content">
+                            <h3>Athletic Performance</h3>
+                            <p>A balanced diet optimized for energy, endurance, and recovery to help you perform your best in sports and intensive training.</p>
+                            <ul class="diet-features">
+                                <li>Periodized nutrition approach</li>
+                                <li>Carbohydrate loading strategies</li>
+                                <li>Hydration protocols</li>
+                                <li>Recovery nutrition</li>
+                                <li>Competition day meal plans</li>
+                            </ul>
+                            <button class="btn select-diet" data-diet-id="performance">Select Plan</button>
+                        </div>
+                    </div>
+
+                    <div class="diet-card">
+                        <div class="diet-card-image">
+                            <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Wellness Diet">
+                        </div>
+                        <div class="diet-card-content">
+                            <h3>Health & Wellness</h3>
+                            <p>A wholesome diet focused on overall health, energy, and longevity with an emphasis on whole foods and anti-inflammatory nutrients.</p>
+                            <ul class="diet-features">
+                                <li>Whole food focus</li>
+                                <li>Anti-inflammatory ingredients</li>
+                                <li>Balanced micronutrients</li>
+                                <li>Gut health support</li>
+                                <li>Sustainable eating habits</li>
+                            </ul>
+                            <button class="btn select-diet" data-diet-id="wellness">Select Plan</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="diet-process">
+            <div class="container">
+                <h2 class="section-title">How It Works</h2>
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <h3>Assessment</h3>
+                        <p>Complete a comprehensive assessment of your current diet, preferences, allergies, and goals.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <h3>Plan Creation</h3>
+                        <p>Our nutritionists design a personalized diet plan based on your specific needs and goals.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <h3>Implementation</h3>
+                        <p>Follow your plan with the help of our meal suggestions, recipes, and shopping lists.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <h3>Monitoring</h3>
+                        <p>Track your progress through the dashboard and adjust your plan as needed for optimal results.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Transform Your Nutrition?</h2>
+                    <p>Sign up today and get a personalized diet plan designed for your goals.</p>
+                    <div class="cta-buttons">
+                        <a href="signup.html" class="btn">Sign Up Now</a>
+                        <a href="#" class="btn-text">Learn more about our approach</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">GYM TOWN</div>
+                    <p>Transform your body, transform your life.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="membership.html">Membership Plans</a></li>
+                        <li><a href="diet.html">Diet Plans</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="signup.html">Sign Up</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>Silicon City, Indore</p>
+                    <p>Email: gymtown12@gmail.com</p>
+                    <p>Phone: 9183849129</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 GYM TOWN. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html> 

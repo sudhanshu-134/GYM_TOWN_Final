@@ -1,0 +1,260 @@
+/* Styles for the StatsDisplay component */
+
+.stats-display {
+  background-color: #f8f9fb;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+.stats-display h2 {
+  color: #2a3b4c;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 0.75rem;
+}
+
+/* Tab Navigation */
+.stats-display .tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 1rem;
+}
+
+.stats-display .tabs button {
+  background-color: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  color: #4a5568;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.75rem 1.25rem;
+  transition: all 0.2s ease;
+}
+
+.stats-display .tabs button:hover {
+  background-color: #e2e8f0;
+}
+
+.stats-display .tabs button.active {
+  background-color: #3b82f6;
+  border-color: #3b82f6;
+  color: white;
+}
+
+/* Tab Content */
+.stats-display .tab-content {
+  min-height: 400px;
+}
+
+.stats-display .loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  color: #4a5568;
+  font-style: italic;
+}
+
+.stats-display .error-message {
+  background-color: #fee2e2;
+  border-left: 4px solid #ef4444;
+  color: #b91c1c;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 4px;
+}
+
+/* Charts */
+.stats-display .chart {
+  margin-bottom: 2rem;
+}
+
+.stats-display .chart h3 {
+  color: #4a5568;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.stats-display .chart-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.stats-display .chart-bar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.stats-display .bar-label {
+  width: 180px;
+  font-size: 0.9rem;
+  color: #4a5568;
+  text-align: right;
+}
+
+.stats-display .bar-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  height: 30px;
+}
+
+.stats-display .bar {
+  background-color: #3b82f6;
+  height: 25px;
+  border-radius: 4px;
+  transition: width 0.5s ease;
+}
+
+.stats-display .bar-value {
+  margin-left: 0.75rem;
+  font-weight: 600;
+  color: #1e3a8a;
+}
+
+/* Average Time Display */
+.stats-display .average-time-display {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.stats-display .time-value {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #2563eb;
+  margin: 1.5rem 0;
+}
+
+.stats-display .description {
+  color: #64748b;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Tables */
+.stats-display table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+.stats-display th {
+  background-color: #f1f5f9;
+  color: #334155;
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.stats-display td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e2e8f0;
+  color: #4a5568;
+}
+
+.stats-display tr:hover td {
+  background-color: #f8fafc;
+}
+
+.stats-display .rank {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+  background-color: #3b82f6;
+  color: white;
+  border-radius: 50%;
+  margin-right: 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* Current Members */
+.stats-display .refresh-button {
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+.stats-display .refresh-button button {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.stats-display .refresh-button button:hover {
+  background-color: #2563eb;
+}
+
+.stats-display .refresh-button button:disabled {
+  background-color: #94a3b8;
+  cursor: not-allowed;
+}
+
+/* Data Source */
+.stats-display .data-source {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e2e8f0;
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .stats-display {
+    padding: 1.5rem;
+  }
+  
+  .stats-display .tabs {
+    gap: 0.5rem;
+  }
+  
+  .stats-display .tabs button {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.8rem;
+  }
+  
+  .stats-display .bar-label {
+    width: 120px;
+  }
+  
+  .stats-display .time-value {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .stats-display .chart-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .stats-display .bar-label {
+    width: 100%;
+    text-align: left;
+  }
+  
+  .stats-display .bar-container {
+    width: 100%;
+  }
+} 

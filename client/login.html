@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - GYM TOWN</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">GYM TOWN</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="membership.html">Membership Plans</a></li>
+                <li><a href="diet.html">Diet Plans</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="auth-section">
+            <div class="container">
+                <div class="form-container">
+                    <h2 class="form-title">Login to Your Account</h2>
+                    <p>Welcome back! Please login to access your dashboard.</p>
+                    
+                    <form id="login-form">
+                        <div class="error-message" id="login-error"></div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" class="form-input" placeholder="Enter your email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" id="password" class="form-input" placeholder="Enter your password" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="remember-forgot">
+                                <div class="remember-me">
+                                    <input type="checkbox" id="remember" name="remember">
+                                    <label for="remember">Remember me</label>
+                                </div>
+                                <a href="#" class="forgot-password">Forgot Password?</a>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn" id="login-button">Login</button>
+                        
+                        <div class="form-footer">
+                            <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+                        </div>
+                    </form>
+                </div>
+                <div class="auth-image">
+                    <img src="https://images.unsplash.com/photo-1603287681836-b174ce5074c2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Man doing squats">
+                    <div class="auth-image-overlay">
+                        <h3>Fitness Journey Starts Here</h3>
+                        <p>Track your progress and achieve your goals with GYM TOWN.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">GYM TOWN</div>
+                    <p>Transform your body, transform your life.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="membership.html">Membership Plans</a></li>
+                        <li><a href="diet.html">Diet Plans</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="signup.html">Sign Up</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>Silicon City, Indore</p>
+                    <p>Email: gymtown12@gmail.com</p>
+                    <p>Phone: 9183849129</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 GYM TOWN. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html> 

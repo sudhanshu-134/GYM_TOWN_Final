@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - GYM TOWN</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">GYM TOWN</div>
+            <ul class="nav-links">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="membership.html">Membership Plans</a></li>
+                <li><a href="diet.html">Diet Plans</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="#" id="logout-link">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="dashboard-header">
+            <div class="container">
+                <div class="welcome-message">
+                    <h1>Welcome, <span id="user-name">User</span>!</h1>
+                    <p>Here's an overview of your fitness journey.</p>
+                </div>
+                <div class="dashboard-actions">
+                    <a href="workout.html" class="btn">Start Workout</a>
+                    <a href="diet.html" class="btn btn-secondary">View Diet Plan</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="progress-overview">
+            <div class="container">
+                <h2 class="section-title">Your Progress</h2>
+                <div class="dashboard" id="progress-container">
+                    <div class="card stat-card">
+                        <div class="stat-value" id="attendanceRate">85%</div>
+                        <div class="stat-label">Attendance Rate</div>
+                    </div>
+                    <div class="card stat-card">
+                        <div class="stat-value" id="completedWorkouts">24</div>
+                        <div class="stat-label">Workouts Completed</div>
+                    </div>
+                    <div class="card stat-card">
+                        <div class="stat-value" id="currentWeight">175 lbs</div>
+                        <div class="stat-label">Current Weight</div>
+                    </div>
+                    <div class="card stat-card">
+                        <div class="stat-value" id="goalWeight">160 lbs</div>
+                        <div class="stat-label">Goal Weight</div>
+                    </div>
+                    <div class="card stat-card">
+                        <div class="stat-value" id="dietAdherence">90%</div>
+                        <div class="stat-label">Diet Adherence</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="weight-tracker">
+            <div class="container">
+                <h2 class="section-title">Weight Tracking</h2>
+                <div class="card chart-card">
+                    <canvas id="weightChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <section class="workout-history">
+            <div class="container">
+                <h2 class="section-title">Recent Workouts</h2>
+                <div class="recent-workouts">
+                    <div class="card workout-card">
+                        <div class="workout-date">June 10, 2023</div>
+                        <h3 class="workout-title">Upper Body Strength</h3>
+                        <div class="workout-details">
+                            <span class="workout-duration">45 minutes</span>
+                            <span class="workout-intensity">High Intensity</span>
+                        </div>
+                        <div class="workout-exercises">
+                            <ul>
+                                <li>Bench Press: 3 sets x 10 reps</li>
+                                <li>Shoulder Press: 3 sets x 12 reps</li>
+                                <li>Bicep Curls: 3 sets x 15 reps</li>
+                                <li>Tricep Extensions: 3 sets x 15 reps</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card workout-card">
+                        <div class="workout-date">June 8, 2023</div>
+                        <h3 class="workout-title">Lower Body Focus</h3>
+                        <div class="workout-details">
+                            <span class="workout-duration">50 minutes</span>
+                            <span class="workout-intensity">Medium Intensity</span>
+                        </div>
+                        <div class="workout-exercises">
+                            <ul>
+                                <li>Squats: 4 sets x 12 reps</li>
+                                <li>Deadlifts: 3 sets x 10 reps</li>
+                                <li>Leg Press: 3 sets x 15 reps</li>
+                                <li>Calf Raises: 4 sets x 20 reps</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card workout-card">
+                        <div class="workout-date">June 6, 2023</div>
+                        <h3 class="workout-title">Cardio Blast</h3>
+                        <div class="workout-details">
+                            <span class="workout-duration">30 minutes</span>
+                            <span class="workout-intensity">High Intensity</span>
+                        </div>
+                        <div class="workout-exercises">
+                            <ul>
+                                <li>Treadmill: 15 minutes (interval)</li>
+                                <li>Jump Rope: 5 minutes</li>
+                                <li>Burpees: 3 sets x 15 reps</li>
+                                <li>Mountain Climbers: 3 sets x 30 seconds</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="nutrition-summary">
+            <div class="container">
+                <h2 class="section-title">Nutrition Overview</h2>
+                <div class="nutrition-cards">
+                    <div class="card nutrition-card">
+                        <h3 class="card-title">Today's Diet Plan</h3>
+                        <div class="meal">
+                            <h4>Breakfast</h4>
+                            <p>Oatmeal with berries and protein shake</p>
+                            <div class="nutrition-stats">
+                                <span>Calories: 450</span>
+                                <span>Protein: 30g</span>
+                                <span>Carbs: 55g</span>
+                                <span>Fat: 10g</span>
+                            </div>
+                        </div>
+                        <div class="meal">
+                            <h4>Lunch</h4>
+                            <p>Grilled chicken salad with olive oil dressing</p>
+                            <div class="nutrition-stats">
+                                <span>Calories: 550</span>
+                                <span>Protein: 40g</span>
+                                <span>Carbs: 25g</span>
+                                <span>Fat: 30g</span>
+                            </div>
+                        </div>
+                        <div class="meal">
+                            <h4>Dinner</h4>
+                            <p>Salmon with sweet potatoes and steamed vegetables</p>
+                            <div class="nutrition-stats">
+                                <span>Calories: 650</span>
+                                <span>Protein: 45g</span>
+                                <span>Carbs: 50g</span>
+                                <span>Fat: 25g</span>
+                            </div>
+                        </div>
+                        <a href="diet.html" class="btn">View Full Diet Plan</a>
+                    </div>
+                    <div class="card nutrition-chart-card">
+                        <h3 class="card-title">Macronutrient Distribution</h3>
+                        <canvas id="macroChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">GYM TOWN</div>
+                    <p>Transform your body, transform your life.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="membership.html">Membership Plans</a></li>
+                        <li><a href="diet.html">Diet Plans</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>Silicon City, Indore</p>
+                    <p>Email: gymtown12@gmail.com</p>
+                    <p>Phone: 9183849129</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 GYM TOWN. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize Weight Chart
+            const weightCtx = document.getElementById('weightChart').getContext('2d');
+            const weightChart = new Chart(weightCtx, {
+                type: 'line',
+                data: {
+                    labels: ['May 1', 'May 8', 'May 15', 'May 22', 'May 29', 'June 5', 'June 12'],
+                    datasets: [{
+                        label: 'Weight (lbs)',
+                        data: [182, 180, 178, 177, 176, 175, 174],
+                        borderColor: '#4CAF50',
+                        backgroundColor: 'rgba(76, 175, 80, 0.1)',
+                        tension: 0.4,
+                        fill: true
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                        },
+                        title: {
+                            display: true,
+                            text: 'Weight Progress Over Time'
+                        }
+                    }
+                }
+            });
+            
+            // Initialize Macro Chart
+            const macroCtx = document.getElementById('macroChart').getContext('2d');
+            const macroChart = new Chart(macroCtx, {
+                type: 'pie',
+                data: {
+                    labels: ['Protein', 'Carbs', 'Fat'],
+                    datasets: [{
+                        label: 'Macronutrients',
+                        data: [115, 130, 65],
+                        backgroundColor: [
+                            '#4CAF50',
+                            '#FF9800',
+                            '#2196F3'
+                        ],
+                        hoverOffset: 4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                        },
+                        title: {
+                            display: true,
+                            text: 'Daily Macronutrient Goals (grams)'
+                        }
+                    }
+                }
+            });
+            
+            // Logout functionality
+            document.getElementById('logout-link').addEventListener('click', function(e) {
+                e.preventDefault();
+                localStorage.removeItem('currentUser');
+                window.location.href = 'login.html';
+            });
+        });
+    </script>
+</body>
+</html> 

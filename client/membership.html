@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Plans - GYM TOWN</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">GYM TOWN</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="membership.html">Membership Plans</a></li>
+                <li><a href="diet.html">Diet Plans</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="membership-hero">
+            <div class="container">
+                <div class="membership-hero-content">
+                    <h1>Choose Your Perfect Membership Plan</h1>
+                    <p>Find the right membership for your fitness goals and lifestyle.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="membership-section">
+            <div class="container">
+                <h2 class="section-title">Our Membership Options</h2>
+                <div class="membership-plans">
+                    <div class="plan-card">
+                        <div class="plan-header">
+                            <h3 class="plan-title">Basic</h3>
+                            <div class="plan-price">
+                                <span class="price">₹700</span>
+                                <span class="period">/ month</span>
+                            </div>
+                        </div>
+                        <div class="plan-features">
+                            <ul>
+                                <li>Access to gym equipment</li>
+                                <li>Locker facilities</li>
+                                <li>Basic fitness assessment</li>
+                                <li>Access during regular hours</li>
+                                <li>Online workout resources</li>
+                            </ul>
+                        </div>
+                        <div class="plan-footer">
+                            <button class="btn purchase-plan" data-plan-id="basic">Choose Plan</button>
+                        </div>
+                        <div class="plan-badge">Most Popular</div>
+                    </div>
+
+                    <div class="plan-card">
+                        <div class="plan-header">
+                            <h3 class="plan-title">Premium</h3>
+                            <div class="plan-price">
+                                <span class="price">₹1200</span>
+                                <span class="period">/ month</span>
+                            </div>
+                        </div>
+                        <div class="plan-features">
+                            <ul>
+                                <li>All Basic features</li>
+                                <li>Group fitness classes</li>
+                                <li>Personalized workout plan</li>
+                                <li>Progress tracking</li>
+                                <li>Extended access hours</li>
+                                <li>Nutrition consultation</li>
+                            </ul>
+                        </div>
+                        <div class="plan-footer">
+                            <button class="btn purchase-plan" data-plan-id="premium">Choose Plan</button>
+                        </div>
+                    </div>
+
+                    <div class="plan-card featured">
+                        <div class="plan-header">
+                            <h3 class="plan-title">Elite</h3>
+                            <div class="plan-price">
+                                <span class="price">₹2000</span>
+                                <span class="period">/ month</span>
+                            </div>
+                        </div>
+                        <div class="plan-features">
+                            <ul>
+                                <li>All Premium features</li>
+                                <li>Personal trainer sessions (2x/month)</li>
+                                <li>Custom diet plan</li>
+                                <li>Wellness consultations</li>
+                                <li>Exclusive facilities access</li>
+                                <li>24/7 access</li>
+                                <li>Guest passes (2/month)</li>
+                                <li>Priority booking for classes</li>
+                            </ul>
+                        </div>
+                        <div class="plan-footer">
+                            <button class="btn purchase-plan" data-plan-id="elite">Choose Plan</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="plan-comparison">
+            <div class="container">
+                <h2 class="section-title">Plan Comparison</h2>
+                <div class="comparison-table-container">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Feature</th>
+                                <th>Basic</th>
+                                <th>Premium</th>
+                                <th>Elite</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Gym Access</td>
+                                <td><span class="check">✓</span></td>
+                                <td><span class="check">✓</span></td>
+                                <td><span class="check">✓</span></td>
+                            </tr>
+                            <tr>
+                                <td>Locker Facilities</td>
+                                <td><span class="check">✓</span></td>
+                                <td><span class="check">✓</span></td>
+                                <td><span class="check">✓</span></td>
+                            </tr>
+                            <tr>
+                                <td>Fitness Assessment</td>
+                                <td>Basic</td>
+                                <td>Advanced</td>
+                                <td>Comprehensive</td>
+                            </tr>
+                            <tr>
+                                <td>Group Classes</td>
+                                <td><span class="cross">✗</span></td>
+                                <td><span class="check">✓</span></td>
+                                <td><span class="check">✓</span></td>
+                            </tr>
+                            <tr>
+                                <td>Workout Plan</td>
+                                <td><span class="cross">✗</span></td>
+                                <td>Standard</td>
+                                <td>Customized</td>
+                            </tr>
+                            <tr>
+                                <td>Personal Trainer</td>
+                                <td><span class="cross">✗</span></td>
+                                <td><span class="cross">✗</span></td>
+                                <td>2 sessions/month</td>
+                            </tr>
+                            <tr>
+                                <td>Diet Plan</td>
+                                <td><span class="cross">✗</span></td>
+                                <td>Basic advice</td>
+                                <td>Customized plan</td>
+                            </tr>
+                            <tr>
+                                <td>Access Hours</td>
+                                <td>Regular hours</td>
+                                <td>Extended hours</td>
+                                <td>24/7 access</td>
+                            </tr>
+                            <tr>
+                                <td>Guest Passes</td>
+                                <td><span class="cross">✗</span></td>
+                                <td><span class="cross">✗</span></td>
+                                <td>2 per month</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="container">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question">How do I sign up for a membership?</div>
+                        <div class="faq-answer">
+                            <p>You can sign up for a membership by creating an account on our website and selecting your preferred plan. After completing the payment, your membership will be activated immediately.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">Can I change my membership plan later?</div>
+                        <div class="faq-answer">
+                            <p>Yes, you can upgrade or downgrade your membership plan at any time through your account dashboard. The price difference will be prorated for the remaining billing period.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">Is there a contract or commitment period?</div>
+                        <div class="faq-answer">
+                            <p>Our memberships are offered on a month-to-month basis with no long-term contracts. You can cancel anytime with 30 days notice.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">Are there any additional fees?</div>
+                        <div class="faq-answer">
+                            <p>There is a one-time registration fee of ₹25 for new members. All features mentioned in the plan descriptions are included in the monthly price with no hidden fees.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">Can I freeze my membership?</div>
+                        <div class="faq-answer">
+                            <p>Yes, you can freeze your membership for up to 3 months per year for medical reasons or extended travel. A small administrative fee may apply.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Start Your Fitness Journey?</h2>
+                    <p>Join GYM TOWN today and take the first step towards a healthier you.</p>
+                    <div class="cta-buttons">
+                        <a href="signup.html" class="btn">Sign Up Now</a>
+                        <a href="#" class="btn-text">Learn more about our facilities</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">GYM TOWN</div>
+                    <p>Transform your body, transform your life.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="membership.html">Membership Plans</a></li>
+                        <li><a href="diet.html">Diet Plans</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="signup.html">Sign Up</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>Silicon City, Indore</p>
+                    <p>Email: gymtown12@gmail.com</p>
+                    <p>Phone: 9183849129</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 GYM TOWN. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html> 
